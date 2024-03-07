@@ -20,7 +20,7 @@ const Home = () => {
   const [call, setCall] = useState(false);
   return (
     <div className="relative z-50 w-[85%] h-[85%] bg-transparent flex items-start justify-between">
-      <div className="lg:w-16 h-96 w-20">
+      <div className="lg:w-16 h-[85vh] overflow-y-scroll overflow-x-hidden lg:h-96 w-20 relative z-[120202151156]">
         <Navbar
         // Toggle Navbar
           show={show}
@@ -87,7 +87,7 @@ const Home = () => {
           }}
         />
       </div>
-      <div className="bg-transparent flex flex-row items-center rounded-xl w-[94%] h-[75vh]">
+      <div className="bg-transparent flex flex-row items-center rounded-xl w-[94%] lg:h-[75vh] h-[85vh]">
         {/* Start Left Side */}
         <div className="h-full bg-bodyColor rounded-xl w-5/12 hidden lg:block">
           <LeftSide />
