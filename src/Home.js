@@ -19,9 +19,10 @@ const Home = () => {
   const [contact, setContact] = useState(false);
   const [call, setCall] = useState(false);
   return (
-    <div className="w-[85%] h-[85%] bg-transparent flex items-start justify-between relative z-50">
-      <div className="w-16 h-96">
+    <div className="relative z-50 w-[85%] h-[85%] bg-transparent flex items-start justify-between">
+      <div className="lg:w-16 h-96 w-20">
         <Navbar
+        // Toggle Navbar
           show={show}
           trueShow={() => {
             setShow(true);
@@ -29,6 +30,7 @@ const Home = () => {
           falseShow={() => {
             setShow(false);
           }}
+          // Switch between navbar Components
           about={about}
           toggleAbout={() => {
             setAbout(true);
@@ -85,13 +87,13 @@ const Home = () => {
           }}
         />
       </div>
-      <div className="w-[94%] h-[75vh] bg-transparent flex items-center rounded-xl">
+      <div className="bg-transparent flex flex-row items-center rounded-xl w-[94%] h-[75vh]">
         {/* Start Left Side */}
-        <div className="w-5/12 h-full bg-bodyColor rounded-xl">
+        <div className="h-full bg-bodyColor rounded-xl w-5/12 hidden lg:block">
           <LeftSide />
         </div>
         {/* Start Right Side */}
-        <div className="w-8/12 h-[95%] bg-bodyColor ">
+        <div className="w-full lg:w-8/12 lg:h-[95%] h-full bg-bodyColor ">
           <div className="w-full h-full overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#646464]">
             {/* Start About Me */}
             {about && <AboutMe />}

@@ -3,7 +3,7 @@ import GetInTouch from "./Contact/GetInTouch";
 
 const Contact = () => {
   return (
-    <div>
+    <section id="contact">
       <MainTitle title={"Get"} subTitle={"In Touch"} />
       <GetInTouch />
       <div className="mt-10">
@@ -36,7 +36,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

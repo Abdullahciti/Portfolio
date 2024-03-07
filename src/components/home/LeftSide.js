@@ -5,14 +5,15 @@ import MyText from "./leftside/Typewriter";
 
 const LeftSide = () => {
   return (
-    <div className="flex flex-col items-center relative z-20 bg-bodyColor shadow-2xl rounded-2xl group">
-      <div className="image-box h-[450px] w-full overflow-hidden mb-8 rounded-b-xl">
+    <div className="flex flex-col relative z-20 bg-bodyColor shadow-2xl rounded-2xl group">
+      {/* Start Image-Box */}
+      <div className=" h-[450px] w-full overflow-hidden mb-8 rounded-b-xl">
         <img
           loading="prioity"
           src={avatar}
           alt=""
           // className="max-w-full opacity-40 group-hover:opacity-100 group-hover:-rotate-3 group-hover:scale-[1.1] group-hover:-translate-x-1 duration-300 w-[500px] h-[900px] object-none"
-          className="max-w-full opacity-100 -rotate-3 scale-[1.1] -translate-x-1 duration-300 w-[500px] h-[900px] object-none"
+          className="max-w-full opacity-100 scale-[1.1] -translate-x-1 duration-300 lg:w-[500px] lg:h-[900px] object-none"
         />
       </div>
       <div className="content w-full">

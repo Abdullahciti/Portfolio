@@ -10,8 +10,8 @@ import "./index.css"
 
 function App() {
   return (
-    <div className="w-full h-screen relative text-textColor bg-black overflow-hidden">
-      <div className="max-w-screen-2xl h-full mx-auto flex justify-center items-center z-20">
+    <div className="w-full overflow-x-hidden relative text-textColor bg-black overflow-hidden h-screen">
+      <div className="h-full flex z-20 max-w-screen-2xl flex-row justify-center items-center lg:mx-auto">
         <Home />
       </div>
       <div className="w-full h-full absolute top-0 left-0 z-10">
