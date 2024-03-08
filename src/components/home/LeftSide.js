@@ -5,9 +5,9 @@ import MyText from "./leftside/Typewriter";
 
 const LeftSide = () => {
   return (
-    <div className="flex flex-col relative z-20 bg-bodyColor shadow-2xl rounded-2xl group">
+    <div className="flex flex-col justify-between overflow-hidden h-full relative z-20 bg-bodyColor shadow-2xl rounded-2xl group">
       {/* Start Image-Box */}
-      <div className=" h-[450px] w-full overflow-hidden mb-8 rounded-b-xl">
+      <div className="h-[450px] w-full overflow-hidden mb-8 rounded-b-xl">
         <img
           loading="prioity"
           src={avatar}

@@ -34,7 +34,7 @@ const Navbar = (props) => {
         // {/* Start Other Navbar Icons */}
         <ul
           onMouseOver={props.trueShow}
-          className="bg-bodyColor rounded-xl flex flex-col justify-between w-[60px] h-[360px] py-2 m-1"
+          className="bg-bodyColor rounded-xl flex flex-col lg:justify-between w-[60px] lg:h-[360px] lg:py-2 lg:m-1"
         >
           <li
             onClick={props.toggleAbout}
