@@ -3,7 +3,7 @@ import MainTitle from "./MainTitle";
 const Messages = () => {
     return ( 
         <div>
-            <MainTitle title={"..."} subTitle={"...."} />
+            <MainTitle title={"Best"} subTitle={"Quotes"} />
         </div>
      );
 }

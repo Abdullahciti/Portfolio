@@ -20,11 +20,11 @@ const Home = () => {
   const [contact, setContact] = useState(false);
   const [call, setCall] = useState(false);
   return (
-    <div className="relative z-50 w-full h-full md:w-[85%] md:h-[85%] bg-transparent flex flex-col md:flex-row md:items-start md:justify-between">
+    <div className="relative z-50 w-[85%] h-[85%] bg-transparent flex flex-col md:flex-row md:items-start md:justify-between">
       {/* Navbar from md Screens */}
       <div className="lg:w-16 lg:h-96 w-20 h-[85vh] hidden md:block">
         <Navbar
-        // Toggle Navbar
+          // Toggle Navbar
           show={show}
           trueShow={() => {
             setShow(true);
@@ -89,9 +89,28 @@ const Home = () => {
           }}
         />
       </div>
+
+      <div className="bg-transparent flex flex-row items-center md:rounded-xl md:w-[94%] lg:h-[75vh] md:h-[85vh] w-full h-full">
+        {/* Start Left Side */}
+        <div className="h-full bg-bodyColor rounded-xl w-5/12 hidden lg:block">
+          <LeftSide />
+        </div>
+        {/* Start Right Side */}
+        <div className="w-full lg:w-8/12 lg:h-[95%] md:h-full h-[80vh] bg-bodyColor md:overflow-hidden md:rounded-3xl">
+          <div className="w-full h-full overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#646464]">
+            {/* Start About Me */}
+            {about && <AboutMe />}
+            {resume && <Resume />}
+            {projects && <Projects />}
+            {message && <Messages />}
+            {contact && <Contact />}
+            {call && <Call />}
+          </div>
+        </div>
+      </div>
       {/* Navbar for sm Screens */}
       <div className="md:hidden block w-full h-auto">
-        <Handynavbar  // Switch between navbar Components
+        <Handynavbar // Switch between navbar Components
           about={about}
           toggleAbout={() => {
             setAbout(true);
@@ -138,24 +157,6 @@ const Home = () => {
             setCall(false);
           }}
         />
-      </div>
-      <div className="bg-transparent flex flex-row items-center md:rounded-xl md:w-[94%] lg:h-[75vh] md:h-[85vh] w-full h-full">
-        {/* Start Left Side */}
-        <div className="h-full bg-bodyColor rounded-xl w-5/12 hidden lg:block">
-          <LeftSide />
-        </div>
-        {/* Start Right Side */}
-        <div className="w-full lg:w-8/12 lg:h-[95%] md:h-full h-[80vh] bg-bodyColor md:overflow-hidden md:rounded-3xl">
-          <div className="w-full h-full overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#646464]">
-            {/* Start About Me */}
-            {about && <AboutMe />}
-            {resume && <Resume />}
-            {projects && <Projects />}
-            {message && <Messages />}
-            {contact && <Contact />}
-            {call && <Call />}
-          </div>
-        </div>
       </div>
     </div>
   );
