@@ -1,4 +1,5 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// Motoin
+import { motion } from "framer-motion";
 
 import Navbar from "./components/home/Navbar";
 import LeftSide from "./components/home/LeftSide";
@@ -7,7 +8,7 @@ import Resume from "./components/home/rightside/Resume";
 import Projects from "./components/home/rightside/Projects";
 import Messages from "./components/home/rightside/Messages";
 import Contact from "./components/home/rightside/Contact";
-import Call from "./components/home/rightside/Call";
+
 import { useState } from "react";
 import Handynavbar from "./components/home/Mobile/Handynavbar";
 
@@ -18,7 +19,7 @@ const Home = () => {
   const [projects, setProjects] = useState(false);
   const [message, setMessage] = useState(false);
   const [contact, setContact] = useState(false);
-  const [call, setCall] = useState(false);
+
   return (
     <div className="relative z-50 w-[85%] h-[85%] bg-transparent flex flex-col md:flex-row md:items-start md:justify-between">
       {/* Navbar from md Screens */}
@@ -40,7 +41,6 @@ const Home = () => {
             setProjects(false);
             setMessage(false);
             setContact(false);
-            setCall(false);
           }}
           resume={resume}
           toggleResume={() => {
@@ -49,7 +49,6 @@ const Home = () => {
             setProjects(false);
             setMessage(false);
             setContact(false);
-            setCall(false);
           }}
           projects={projects}
           toggleProjects={() => {
@@ -58,7 +57,6 @@ const Home = () => {
             setProjects(true);
             setMessage(false);
             setContact(false);
-            setCall(false);
           }}
           message={message}
           toggleMessage={() => {
@@ -67,7 +65,6 @@ const Home = () => {
             setProjects(false);
             setMessage(true);
             setContact(false);
-            setCall(false);
           }}
           contact={contact}
           toggleContact={() => {
@@ -76,16 +73,6 @@ const Home = () => {
             setProjects(false);
             setMessage(false);
             setContact(true);
-            setCall(false);
-          }}
-          call={call}
-          toggleCall={() => {
-            setAbout(false);
-            setResume(false);
-            setProjects(false);
-            setMessage(false);
-            setContact(false);
-            setCall(true);
           }}
         />
       </div>
@@ -98,12 +85,53 @@ const Home = () => {
         <div className="w-full lg:w-8/12 lg:h-[95%] md:h-full h-[80vh] bg-bodyColor md:overflow-hidden md:rounded-lg rounded-lg">
           <div className="w-full h-full overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#646464]">
             {/* Start About Me */}
-            {about && <AboutMe />}
-            {resume && <Resume />}
-            {projects && <Projects />}
-            {message && <Messages />}
-            {contact && <Contact />}
-            {call && <Call />}
+            {about && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                {" "}
+                <AboutMe />{" "}
+              </motion.div>
+            )}
+
+            {resume && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Resume />
+              </motion.div>
+            )}
+            {projects && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Projects />
+              </motion.div>
+            )}
+            {message && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Messages />
+              </motion.div>
+            )}
+            {contact && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <Contact />
+              </motion.div>
+            )}
           </div>
         </div>
       </div>
@@ -117,7 +145,6 @@ const Home = () => {
             setProjects(false);
             setMessage(false);
             setContact(false);
-            setCall(false);
           }}
           resume={resume}
           toggleResume={() => {
@@ -126,7 +153,6 @@ const Home = () => {
             setProjects(false);
             setMessage(false);
             setContact(false);
-            setCall(false);
           }}
           projects={projects}
           toggleProjects={() => {
@@ -135,7 +161,6 @@ const Home = () => {
             setProjects(true);
             setMessage(false);
             setContact(false);
-            setCall(false);
           }}
           message={message}
           toggleMessage={() => {
@@ -144,7 +169,6 @@ const Home = () => {
             setProjects(false);
             setMessage(true);
             setContact(false);
-            setCall(false);
           }}
           contact={contact}
           toggleContact={() => {
@@ -153,7 +177,6 @@ const Home = () => {
             setProjects(false);
             setMessage(false);
             setContact(true);
-            setCall(false);
           }}
         />
       </div>
