@@ -6,7 +6,7 @@ import LeftSide from "./components/home/LeftSide";
 import AboutMe from "./components/home/rightside/AboutMe";
 import Resume from "./components/home/rightside/Resume";
 import Projects from "./components/home/rightside/Projects";
-import Messages from "./components/home/rightside/Messages";
+import Messages from "./components/home/rightside/UsedTechs";
 import Contact from "./components/home/rightside/Contact";
 
 import { useState } from "react";

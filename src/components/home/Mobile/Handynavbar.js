@@ -1,9 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { GrTechnology } from "react-icons/gr";
 import {
   faAddressBook,
-  faComments,
   faEnvelope,
-  // faPhone,
   faSuitcase,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
@@ -33,7 +32,7 @@ const Handynavbar = (props) => {
         onClick={props.toggleMessage}
         className="text-2xl text-textColor hover:text-designColor mx-4 py-3"
       >
-        <FontAwesomeIcon icon={faComments} />
+        <GrTechnology className="translate-y-1.5" />
       </li>
       <li
         className="text-2xl text-textColor hover:text-designColor mx-4 py-3"

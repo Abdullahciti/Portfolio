@@ -1,13 +1,14 @@
 const ProjectCard = ({ image, title, category }) => {
   return (
     <div>
-      <div className="w-full h-96 flex flex-col items-center justify-center py-10 px-5">
-        <div className="image-box overflow-hidden rounded-lg hover:bg-designColor group">
-          <img className="w-full h-full group-hover:scale-[0.91] duration-300" src={image} alt="cardImage" />
+      <div className="w-full flex flex-col my-6 md:mb-6 md:mt-0 items-center justify-center md:borderBottom md:py-10 md:px-5">
+        <div className="w-fit h-auto  flex items-center justify-center relative mb-3 md:my-0 overflow-hidden cursor-pointer rounded-lg group">
+          <img className="shadow-2xl md:w-full md:h-full max-w-[250px] max-h-[250px]" src={image} alt="cardImage" />
+          <div className="absolute w-full h-full left-0 top-0 hover:bg-gradient-to-t from-green-600 via-green-600 to-green-200 opacity-20 duration-300"></div>
         </div>
         <div className="content-box w-full flex flex-col items-center justify-center">
-          <h1 className="mt-5 mb-3 text-[#ccc] hover:text-[#e2e2e2] duration-300">{title}</h1>
-          <p className="text-gray-400">{category}</p>
+          <h1 className="font-titleFont text-lg font-semibold text-[#ccc] mt-5 hover:text-[#e2e2e2] duration-300">{title}</h1>
+          <p className="text-base text-gray-400 -mt-1">{category}</p>
         </div>
       </div>
     </div>
