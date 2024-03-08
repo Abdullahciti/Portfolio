@@ -11,11 +11,13 @@ const Contact = () => {
         <div className="px-10">
           <div className="w-full flex flex-col md:flex-row md:justify-between md:items-center md:gap-10">
             <input
+              required
               className="outline-none bg-transparent w-full border-[1px] border-[#9999992f] rounded-md md:my-6 mt-4 mb-2 px-3 py-2"
               type="text"
               placeholder="Name"
             />
             <input
+              required
               className="outline-none bg-transparent w-full border-[1px] border-[#9999992f] rounded-md md:my-6 mt-2 mb-4  px-3 py-2"
               type="text"
               placeholder="Email Address"
@@ -23,6 +25,7 @@ const Contact = () => {
           </div>
           <div className="w-full">
             <textarea
+              required
               placeholder="Feel free to send me a message"
               className="w-full h-44 max-h-full resize-none bg-transparent outline-none border-[1px] mb-3 px-3 py-2 border-[#9999992f] rounded-md"
             ></textarea>
