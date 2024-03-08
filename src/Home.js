@@ -89,14 +89,13 @@ const Home = () => {
           }}
         />
       </div>
-
       <div className="bg-transparent flex flex-row items-center md:rounded-xl md:w-[94%] lg:h-[75vh] md:h-[85vh] w-full h-full">
         {/* Start Left Side */}
         <div className="h-full bg-bodyColor rounded-xl w-5/12 hidden lg:block">
           <LeftSide />
         </div>
         {/* Start Right Side */}
-        <div className="w-full lg:w-8/12 lg:h-[95%] md:h-full h-[80vh] bg-bodyColor md:overflow-hidden md:rounded-3xl">
+        <div className="w-full lg:w-8/12 lg:h-[95%] md:h-full h-[80vh] bg-bodyColor md:overflow-hidden md:rounded-lg rounded-lg">
           <div className="w-full h-full overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#646464]">
             {/* Start About Me */}
             {about && <AboutMe />}
