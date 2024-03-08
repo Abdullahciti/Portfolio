@@ -12,7 +12,7 @@ const Services = () => {
   return (
     <div className="services flex flex-col bg-bodyColor p-8">
       {/* start Services Content */}
-      <div className="grid grid-cols-2 mb-3 pb-3 gap-5">
+      <div className="grid md:grid-cols-2 grid-cols-1 mb-3 pb-3 gap-5">
         {/* Start Web Development */}
         <ServicesContent
           icon={<FaEarthAmericas />}

@@ -5,9 +5,9 @@ import ResumeCard from "./ResumeCard";
 
 const ResmueData = () => {
   return (
-    <div className="w-full grid grid-cols-9">
+    <div className="w-full grid nd:grid-cols-9 grid-cols-1">
       {/* Start Experiance */}
-      <div className="col-span-4 px-4 pl-6">
+      <div className="md:col-span-4 px-4 pl-6">
         <AltTitle icon={<PiBagSimpleFill />} title={"Experience"} />
         <ResumeCard
           status={true}
@@ -50,11 +50,11 @@ const ResmueData = () => {
         />
       </div>
       {/* Manual Border */}
-      <div className="col-span-1 h-full w-full flex items-center justify-center">
+      <div className="col-span-1 hidden h-full w-full md:flex items-center justify-center">
         <span className="w-[1px] h-full bg-zinc-800 inline-flex"></span>
       </div>
       {/* Start Education */}
-      <div className="col-span-4 px-4 pl-6">
+      <div className="md:col-span-4 px-4 pl-6">
         <AltTitle icon={<IoSchool />} title={"Education"} />
         <ResumeCard
           status={""}

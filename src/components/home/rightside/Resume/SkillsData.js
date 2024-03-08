@@ -9,7 +9,7 @@ import { GiGiftOfKnowledge } from "react-icons/gi";
 
 const SkillsData = () => {
   return (
-    <div className="w-full grid grid-cols-9">
+    <div className="w-full grid md:grid-cols-9 grid-cols-1">
       {/* Start Design */}
       <div className=" col-span-4 px-4 pl-6">
         <AltTitle icon={<GiMoebiusTriangle />} title={"Design"} />
@@ -29,11 +29,11 @@ const SkillsData = () => {
         <SkillsCard status={true} skill={"Vue"} fill={"w-[84%]"} />
       </div>
       {/* Start Manual Border */}
-      <div className="col-span-1 h-full w-full flex items-center justify-center">
+      <div className="col-span-1 h-full w-full md:flex hidden items-center justify-center">
         <span className="w-[1px] h-full bg-zinc-800 inline-flex"></span>
       </div>
       {/* Start Languages */}
-      <div className=" col-span-4 px-4 pl-6">
+      <div className="md:col-span-4 px-4 pl-6">
         <AltTitle icon={<GrFlagFill />} title={"Languages"} />
         <SkillsCard status={"skill"} skill={"Arabic"} fill={"w-[100%]"} />
         <SkillsCard status={true} skill={"Deutsch"} fill={"w-[88%]"} />
