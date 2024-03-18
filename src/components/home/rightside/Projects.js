@@ -17,35 +17,62 @@ const Projects = () => {
         <div className="px-6">
           <ProjectCard
             image={projectTwo}
-            title={"Responive Website"}
-            category={"Html & Css"}
+            title={"CitizneX Website"}
+            category={"React.js"}
+            link={"https://citizen-x-website.vercel.app/"}
           />
           <ProjectCard
             image={projectThree}
-            title={"Responive Website"}
-            category={"Html & Css"}
+            title={"Estate II"}
+            category={"React & Routing"}
+            link={"https://estate-ii.vercel.app/"}
           />
           <ProjectCard
             image={projectFive}
-            title={"Responive Website"}
-            category={"Html & Css"}
+            title={"Weather App"}
+            category={"Vue.js & Tailwind"}
+            link={"https://weather-app-ochre-rho.vercel.app/"}
+          />
+          <ProjectCard
+            image={projectFive}
+            title={"Mobile App"}
+            category={"Angular"}
+          />
+          <ProjectCard
+            image={projectFive}
+            title={"Discord Bot"}
+            category={"Python"}
           />
         </div>
         <div className="px-6">
           <ProjectCard
             image={projectFour}
-            title={"Blog Webesite"}
-            category={"Webesite"}
+            title={"TopC Simple Wesite"}
+            category={"Html & Css and JavaScript"}
+            link={"https://abdullahciti.github.io/TopC-Website.github.io/"}
           />
           <ProjectCard
             image={projectOne}
-            title={"Blog Webesite"}
+            title={"My Tunes"}
             category={"Webesite"}
+            link={"https://abdullahciti.github.io/My-tunes/"}
           />
           <ProjectCard
             image={projectSix}
-            title={"Blog Webesite"}
-            category={"Webesite"}
+            title={"Kasper Webesite"}
+            category={"Website"}
+            link={"https://abdullahciti.github.io/Kasper-Website/"}
+          />
+          <ProjectCard
+            image={projectSix}
+            title={"Node Server"}
+            category={"Server"}
+          />
+          <ProjectCard
+            image={projectSix}
+            title={"Js Template"}
+            category={"JavaScript"}
+            link={"https://abdullahciti.github.io/Special-Template-JS/"}
           />
         </div>
       </div>

@@ -1,4 +1,4 @@
-const ProjectCard = ({ image, title, category }) => {
+const ProjectCard = ({ image, title, category, link }) => {
   return (
     <div>
       <div className="w-full flex flex-col my-6 md:mb-6 md:mt-0 items-center justify-center md:borderBottom md:py-10 md:px-5">
@@ -9,6 +9,7 @@ const ProjectCard = ({ image, title, category }) => {
         <div className="content-box w-full flex flex-col items-center justify-center">
           <h1 className="font-titleFont text-lg font-semibold text-[#ccc] mt-5 hover:text-[#e2e2e2] duration-300">{title}</h1>
           <p className="text-base text-gray-400 -mt-1">{category}</p>
+          {link ? <a className="text-designColor hover:decoration-designColor hover:underline hover:decoration-2 text-lg duration-300" href={link} target="_blank" rel="noreferrer" >Visit</a> : <p>Incoming...</p>}
         </div>
       </div>
     </div>
