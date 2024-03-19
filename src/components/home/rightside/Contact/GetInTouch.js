@@ -8,7 +8,7 @@ const GetInTouch = () => {
             <span className=" bg-designColor text-black text-lg rounded-md px-2 font-semibold">
               Address:
             </span>
-            <span className="pr-2 w-[155px]">Geislingen, Germany</span>
+            <span className="pr-2 w-[155px]">Geislingen, DE</span>
           </li>
           <li className="w-full flex justify-between items-center borderBottom py-3">
             <span className=" bg-designColor text-black text-lg rounded-md px-2 font-semibold">

@@ -11,9 +11,11 @@ import Contact from "./components/home/rightside/Contact";
 
 import { useState } from "react";
 import Handynavbar from "./components/home/Mobile/Handynavbar";
+import PersonalInfo from "./components/home/Mobile/PersonalInfo";
 
 const Home = () => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
+  const [left, setLeft] = useState(false);
   const [about, setAbout] = useState(true);
   const [resume, setResume] = useState(false);
   const [projects, setProjects] = useState(false);
@@ -31,11 +33,21 @@ const Home = () => {
             setShow(true);
           }}
           falseShow={() => {
-            setShow(false);
+            setShow(true);
           }}
           // Switch between navbar Components
+          left={left}
+          toggleLeft={() => {
+            setLeft(true)
+            setAbout(false);
+            setResume(false);
+            setProjects(false);
+            setMessage(false);
+            setContact(false);
+          }}
           about={about}
           toggleAbout={() => {
+            setLeft(false)
             setAbout(true);
             setResume(false);
             setProjects(false);
@@ -44,6 +56,7 @@ const Home = () => {
           }}
           resume={resume}
           toggleResume={() => {
+            setLeft(false)
             setAbout(false);
             setResume(true);
             setProjects(false);
@@ -52,6 +65,7 @@ const Home = () => {
           }}
           projects={projects}
           toggleProjects={() => {
+            setLeft(false)
             setAbout(false);
             setResume(false);
             setProjects(true);
@@ -60,6 +74,7 @@ const Home = () => {
           }}
           message={message}
           toggleMessage={() => {
+            setLeft(false)
             setAbout(false);
             setResume(false);
             setProjects(false);
@@ -68,6 +83,7 @@ const Home = () => {
           }}
           contact={contact}
           toggleContact={() => {
+            setLeft(false)
             setAbout(false);
             setResume(false);
             setProjects(false);
@@ -84,6 +100,17 @@ const Home = () => {
         {/* Start Right Side */}
         <div className="w-full lg:w-8/12 lg:h-[95%] md:h-full h-[80vh] bg-bodyColor md:overflow-hidden md:rounded-lg rounded-lg">
           <div className="w-full h-full overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#646464]">
+            {/* Start Personal info hidden from md screens! */}
+            {left && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                {" "}
+                <PersonalInfo />{" "}
+              </motion.div>
+            )}
             {/* Start About Me */}
             {about && (
               <motion.div
@@ -95,7 +122,7 @@ const Home = () => {
                 <AboutMe />{" "}
               </motion.div>
             )}
-
+            {/* Start Resume */}
             {resume && (
               <motion.div
                 initial={{ opacity: 0 }}
@@ -105,6 +132,7 @@ const Home = () => {
                 <Resume />
               </motion.div>
             )}
+            {/* Start My projects */}
             {projects && (
               <motion.div
                 initial={{ opacity: 0 }}
@@ -114,6 +142,7 @@ const Home = () => {
                 <Projects />
               </motion.div>
             )}
+            {/* Start message Me */}
             {message && (
               <motion.div
                 initial={{ opacity: 0 }}
@@ -123,6 +152,7 @@ const Home = () => {
                 <Messages />
               </motion.div>
             )}
+            {/* Start contact Me */}
             {contact && (
               <motion.div
                 initial={{ opacity: 0 }}
@@ -138,8 +168,18 @@ const Home = () => {
       {/* Navbar for sm Screens */}
       <div className="md:hidden block w-full h-auto">
         <Handynavbar // Switch between navbar Components
+          left={left}
+          toggleLeft={() => {
+            setLeft(true)
+            setAbout(false);
+            setResume(false);
+            setProjects(false);
+            setMessage(false);
+            setContact(false);
+          }}
           about={about}
           toggleAbout={() => {
+            setLeft(false)
             setAbout(true);
             setResume(false);
             setProjects(false);
@@ -148,6 +188,7 @@ const Home = () => {
           }}
           resume={resume}
           toggleResume={() => {
+            setLeft(false)
             setAbout(false);
             setResume(true);
             setProjects(false);
@@ -156,6 +197,7 @@ const Home = () => {
           }}
           projects={projects}
           toggleProjects={() => {
+            setLeft(false)
             setAbout(false);
             setResume(false);
             setProjects(true);
@@ -164,6 +206,7 @@ const Home = () => {
           }}
           message={message}
           toggleMessage={() => {
+            setLeft(false)
             setAbout(false);
             setResume(false);
             setProjects(false);
@@ -172,6 +215,7 @@ const Home = () => {
           }}
           contact={contact}
           toggleContact={() => {
+            setLeft(false)
             setAbout(false);
             setResume(false);
             setProjects(false);

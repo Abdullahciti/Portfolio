@@ -1,15 +1,22 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { GrTechnology } from "react-icons/gr";
+import { GrTechnology } from "react-icons/gr"
 import {
   faAddressBook,
   faEnvelope,
+  faPersonChalkboard,
   faSuitcase,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Handynavbar = (props) => {
   return (
-    <ul className="bg-bodyColor rounded-xl flex w-fit mx-auto my-4 cursor-pointer">
+    <ul className="bg-bodyColor rounded-xl flex mx-auto my-4 cursor-pointer justify-evenly w-full">
+      <li
+        onClick={props.toggleLeft}
+        className="text-2xl text-textColor hover:text-designColor mx-4 py-3"
+      >
+        <FontAwesomeIcon icon={faPersonChalkboard} />
+      </li>
       <li
         onClick={props.toggleAbout}
         className="text-2xl text-textColor hover:text-designColor mx-4 py-3"
@@ -29,8 +36,8 @@ const Handynavbar = (props) => {
         <FontAwesomeIcon icon={faSuitcase} />
       </li>
       <li
-        onClick={props.toggleMessage}
-        className="text-2xl text-textColor hover:text-designColor mx-4 py-3"
+        onClick={props.toggleTech}
+        className="text-2xl hidden text-textColor hover:text-designColor mx-4 py-3"
       >
         <GrTechnology className="translate-y-1.5" />
       </li>

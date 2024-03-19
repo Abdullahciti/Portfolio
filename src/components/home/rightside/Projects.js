@@ -25,6 +25,7 @@ const Projects = () => {
             category={"Website"}
             link={"https://citizen-x-website.vercel.app/"}
             myGrad={"from-blue-600 via-blue-600 to-blue-200"}
+            linkGit={"https://github.com/Abdullahciti/CitizenX-Website"}
           />
           <ProjectCard
             image={projectThree}
@@ -32,6 +33,7 @@ const Projects = () => {
             category={"Website"}
             link={"https://estate-ii.vercel.app/"}
             myGrad={"from-blue-600 via-blue-600 to-blue-200"}
+            linkGit={"https://github.com/Abdullahciti/Estate-II"}
           />
           <ProjectCard
             image={projectFive}
@@ -39,6 +41,7 @@ const Projects = () => {
             category={"App"}
             link={"https://weather-app-ochre-rho.vercel.app/"}
             myGrad={"from-green-600 via-green-600 to-green-200"}
+            linkGit={"https://github.com/Abdullahciti/weather-app"}
           />
           <ProjectCard
             image={projectSeven}
@@ -60,6 +63,7 @@ const Projects = () => {
             category={"Website"}
             link={"https://abdullahciti.github.io/TopC-Website.github.io/"}
             myGrad={"from-blue-600 via-blue-600 to-blue-200"}
+            linkGit={"https://github.com/Abdullahciti/TopC-Website.github.io"}
           />
           <ProjectCard
             image={projectFour}
@@ -67,6 +71,7 @@ const Projects = () => {
             category={"Webesite"}
             link={"https://abdullahciti.github.io/My-tunes/"}
             myGrad={"from-red-600 via-red-600 to-red-200"}
+            linkGit={"https://github.com/Abdullahciti/TopC-Website.github.io"}
           />
           <ProjectCard
             image={projectSix}
@@ -74,6 +79,7 @@ const Projects = () => {
             category={"Website"}
             link={"https://abdullahciti.github.io/Kasper-Website/"}
             myGrad={"from-blue-600 via-blue-600 to-blue-200"}
+            linkGit={"https://github.com/Abdullahciti/Kasper-Website"}
           />
           <ProjectCard
             image={projectEight}
@@ -88,6 +94,7 @@ const Projects = () => {
             category={"Website"}
             link={"https://abdullahciti.github.io/Special-Template-JS/"}
             myGrad={"from-blue-800 via-blue-600 to-blue-200"}
+            linkGit={"https://github.com/Abdullahciti/Special-Template-JS"}
           />
         </div>
       </div>

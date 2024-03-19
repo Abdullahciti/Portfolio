@@ -1,7 +1,6 @@
 import MainTitle from "./MainTitle";
 import About from "./About me/About";
 import Services from "./About me/Services";
-import FunFact from "./About me/FunFact";
 
 const AboutMe = () => {
   return (
@@ -13,9 +12,6 @@ const AboutMe = () => {
       {/* Start Services */}
       <MainTitle title={"My"} subTitle={"Services"} />
       <Services />
-      {/* Start Fun Fact */}
-      <MainTitle title={"Some"} subTitle={"Results"} />
-      <FunFact />
     </section>
   );
 };
