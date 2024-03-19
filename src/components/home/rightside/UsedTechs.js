@@ -14,7 +14,7 @@ const UsedTechs = () => {
   return (
     <div>
       <MainTitle title={"Used"} subTitle={"Technologies"} />
-      <div className="w-full grid grid-cols-2">
+      <div className="w-full grid md:grid-cols-2 grid-cols-1">
         <div className="px-6">
           <TechCard
             image={javascript}
