@@ -14,7 +14,7 @@ module.exports = {
         titleRoundBg:
           "linear-gradient(135deg, rgba(120, 204, 109, 0.15) 0%, rgba(120, 204, 109, 1) 100%)",
       },
-      animatiion: {
+      animation: {
         "spin-slow": "spin 15s linear infinite",
         "reverse-spin": "reverse-spin 15s linear infinite",
         "reverse-spin-long": "reverse-spin 35s linear infinite",
