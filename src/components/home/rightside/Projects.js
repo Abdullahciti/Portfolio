@@ -1,12 +1,16 @@
 import MainTitle from "./MainTitle";
-import ProjectCard from "./Projects/ProjectCerd";
+import ProjectCard from "./Projects/ProjectCard.js";
 import {
     projectOne,
     projectTwo,
     projectThree,
     projectFour,
     projectFive,
-    projectSix, 
+    projectSix,
+    projectSeven,
+    projectNine,
+    projectEight,
+    projectTen, 
 } from "../../../assets/Index.js"
 
 const Projects = () => {
@@ -16,63 +20,74 @@ const Projects = () => {
       <div className="w-full grid grid-cols-1 md:grid-cols-2 md:gap-10">
         <div className="px-6">
           <ProjectCard
-            image={projectTwo}
+            image={projectOne}
             title={"CitizneX Website"}
-            category={"React.js"}
+            category={"Website"}
             link={"https://citizen-x-website.vercel.app/"}
+            myGrad={"from-blue-600 via-blue-600 to-blue-200"}
           />
           <ProjectCard
             image={projectThree}
             title={"Estate II"}
-            category={"React & Routing"}
+            category={"Website"}
             link={"https://estate-ii.vercel.app/"}
+            myGrad={"from-blue-600 via-blue-600 to-blue-200"}
           />
           <ProjectCard
             image={projectFive}
             title={"Weather App"}
-            category={"Vue.js & Tailwind"}
+            category={"App"}
             link={"https://weather-app-ochre-rho.vercel.app/"}
+            myGrad={"from-green-600 via-green-600 to-green-200"}
           />
           <ProjectCard
-            image={projectFive}
-            title={"Mobile App"}
-            category={"Angular"}
+            image={projectSeven}
+            title={"Mobile Application"}
+            category={"app"}
+            myGrad={"from-gray-600 via-gray-600 to-blue-200"}
           />
           <ProjectCard
-            image={projectFive}
+            image={projectNine}
             title={"Discord Bot"}
             category={"Python"}
+            myGrad={"from-blue-600 via-blue-600 to-blue-200"}
           />
         </div>
         <div className="px-6">
           <ProjectCard
-            image={projectFour}
-            title={"TopC Simple Wesite"}
-            category={"Html & Css and JavaScript"}
+            image={projectTwo}
+            title={"TopC"}
+            category={"Website"}
             link={"https://abdullahciti.github.io/TopC-Website.github.io/"}
+            myGrad={"from-blue-600 via-blue-600 to-blue-200"}
           />
           <ProjectCard
-            image={projectOne}
+            image={projectFour}
             title={"My Tunes"}
             category={"Webesite"}
             link={"https://abdullahciti.github.io/My-tunes/"}
+            myGrad={"from-red-600 via-red-600 to-red-200"}
           />
           <ProjectCard
             image={projectSix}
-            title={"Kasper Webesite"}
+            title={"Kasper"}
             category={"Website"}
             link={"https://abdullahciti.github.io/Kasper-Website/"}
+            myGrad={"from-blue-600 via-blue-600 to-blue-200"}
           />
           <ProjectCard
-            image={projectSix}
-            title={"Node Server"}
-            category={"Server"}
+            image={projectEight}
+            title={"Bondi"}
+            category={"Website"}
+            link={""}
+            myGrad={"from-gray-600 via-gray-600 to-blue-200"}
           />
           <ProjectCard
-            image={projectSix}
-            title={"Js Template"}
-            category={"JavaScript"}
+            image={projectTen}
+            title={"Js-Template"}
+            category={"Website"}
             link={"https://abdullahciti.github.io/Special-Template-JS/"}
+            myGrad={"from-blue-800 via-blue-600 to-blue-200"}
           />
         </div>
       </div>

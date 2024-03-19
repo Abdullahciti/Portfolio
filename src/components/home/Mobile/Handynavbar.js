@@ -9,7 +9,7 @@ import {
 
 const Handynavbar = (props) => {
   return (
-    <ul className="bg-bodyColor rounded-xl flex w-fit mx-auto my-4">
+    <ul className="bg-bodyColor rounded-xl flex w-fit mx-auto my-4 cursor-pointer">
       <li
         onClick={props.toggleAbout}
         className="text-2xl text-textColor hover:text-designColor mx-4 py-3"
