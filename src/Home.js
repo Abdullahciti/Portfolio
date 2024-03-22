@@ -38,7 +38,7 @@ const Home = () => {
           // Switch between navbar Components
           left={left}
           toggleLeft={() => {
-            setLeft(true)
+            setLeft(true);
             setAbout(false);
             setResume(false);
             setProjects(false);
@@ -47,7 +47,7 @@ const Home = () => {
           }}
           about={about}
           toggleAbout={() => {
-            setLeft(false)
+            setLeft(false);
             setAbout(true);
             setResume(false);
             setProjects(false);
@@ -56,7 +56,7 @@ const Home = () => {
           }}
           resume={resume}
           toggleResume={() => {
-            setLeft(false)
+            setLeft(false);
             setAbout(false);
             setResume(true);
             setProjects(false);
@@ -65,7 +65,7 @@ const Home = () => {
           }}
           projects={projects}
           toggleProjects={() => {
-            setLeft(false)
+            setLeft(false);
             setAbout(false);
             setResume(false);
             setProjects(true);
@@ -74,7 +74,7 @@ const Home = () => {
           }}
           message={message}
           toggleMessage={() => {
-            setLeft(false)
+            setLeft(false);
             setAbout(false);
             setResume(false);
             setProjects(false);
@@ -83,7 +83,7 @@ const Home = () => {
           }}
           contact={contact}
           toggleContact={() => {
-            setLeft(false)
+            setLeft(false);
             setAbout(false);
             setResume(false);
             setProjects(false);
@@ -101,16 +101,7 @@ const Home = () => {
         <div className="w-full lg:w-8/12 lg:h-[95%] md:h-full h-[80vh] bg-bodyColor md:overflow-hidden md:rounded-lg rounded-lg">
           <div className="w-full h-full overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#646464]">
             {/* Start Personal info hidden from md screens! */}
-            {left && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-              >
-                {" "}
-                <PersonalInfo />{" "}
-              </motion.div>
-            )}
+            {left && <PersonalInfo />}
             {/* Start About Me */}
             {about && (
               <motion.div
@@ -170,7 +161,7 @@ const Home = () => {
         <Handynavbar // Switch between navbar Components
           left={left}
           toggleLeft={() => {
-            setLeft(true)
+            setLeft(true);
             setAbout(false);
             setResume(false);
             setProjects(false);
@@ -179,7 +170,7 @@ const Home = () => {
           }}
           about={about}
           toggleAbout={() => {
-            setLeft(false)
+            setLeft(false);
             setAbout(true);
             setResume(false);
             setProjects(false);
@@ -188,7 +179,7 @@ const Home = () => {
           }}
           resume={resume}
           toggleResume={() => {
-            setLeft(false)
+            setLeft(false);
             setAbout(false);
             setResume(true);
             setProjects(false);
@@ -197,7 +188,7 @@ const Home = () => {
           }}
           projects={projects}
           toggleProjects={() => {
-            setLeft(false)
+            setLeft(false);
             setAbout(false);
             setResume(false);
             setProjects(true);
@@ -206,7 +197,7 @@ const Home = () => {
           }}
           message={message}
           toggleMessage={() => {
-            setLeft(false)
+            setLeft(false);
             setAbout(false);
             setResume(false);
             setProjects(false);
@@ -215,7 +206,7 @@ const Home = () => {
           }}
           contact={contact}
           toggleContact={() => {
-            setLeft(false)
+            setLeft(false);
             setAbout(false);
             setResume(false);
             setProjects(false);

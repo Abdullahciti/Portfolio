@@ -1,4 +1,3 @@
-
 // Components
 import ServicesContent from "./services/ServicesContent";
 
@@ -18,21 +17,21 @@ const Services = () => {
           icon={<FaEarthAmericas />}
           header={"Web Development"}
           paragraph={
-            "We specialize in expert web development solutions, let's turn your vision into reality."
+            "I craft dynamic and responsive websites from start to finish, tailored to your needs."
           }
-          />
-         {/* Start Web Design */}
+        />
+        {/* Start Web Design */}
         <ServicesContent
-          icon={<MdOutlineDesignServices />        }
-          header={"Web Design"}
+          icon={<MdOutlineDesignServices />}
+          header={"Vision Realization"}
           paragraph={
-            "Transforming Your Dreams into Reality: Let Our Team's Inspiration Elevate Your Web Development & Design Vision"
+            "Bringing your digital vision to life: let our web development expertise realize your online goals!"
           }
-          />
+        />
         {/* Start Mobile Design */}
         <ServicesContent
           icon={<MdOutlineMobileFriendly />}
-          header={"Mobile Design"}
+          header={"Custom Web Applications"}
           paragraph={
             "Driving your mobile aspirations forward with our expertise and creativity."
           }
@@ -40,9 +39,9 @@ const Services = () => {
         {/* Start Latest News */}
         <ServicesContent
           icon={<ImUserTie />}
-          header={"Stay Updated"}
+          header={"Maintenance and Support"}
           paragraph={
-            "Elevate Your Web Development & Design Vision with Our Team's Inspiration"
+            "continuous maintenance and support to keep your website performing smoothly and securely."
           }
         />
       </div>

@@ -1,5 +1,4 @@
 import { avatar } from "../../assets/Index";
-import Buttons from "./leftside/Buttons";
 import SocialIcons from "./leftside/SocialIcons";
 import MyText from "./leftside/Typewriter";
 
@@ -24,9 +23,9 @@ const LeftSide = () => {
         <div className="w-fit mx-auto social-icons mb-8">
           <SocialIcons />
         </div>
-        <div className="buttons">
+        {/* <div className="buttons">
           <Buttons />
-        </div>
+        </div> */}
       </div>
     </div>
   );

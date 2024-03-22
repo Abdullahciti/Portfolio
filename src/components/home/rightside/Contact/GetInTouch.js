@@ -14,12 +14,12 @@ const GetInTouch = () => {
             <span className=" bg-designColor text-black text-lg rounded-md px-2 font-semibold">
               Phone
             </span>
-            <span className="pr-2 w-[155px]">+491635345412</span>
+            <span className="pr-2 w-[155px]">+491702390457</span>
           </li>
         </ul>
       </div>
       {/* Manual Border */}
-      <div className="col-span-1 hidden h-full w-full lg:flex items-center justify-center pb-5">
+      <div className="col-span-1 hidden cus:hidden h-full w-full lg:flex items-center justify-center pb-5">
         <span className="w-[1px] h-full bg-zinc-800 inline-flex"></span>
       </div>
       {/* Start Right Side */}

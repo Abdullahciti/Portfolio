@@ -11,7 +11,7 @@ import "./index.css"
 function App() {
   return (
     <div className="w-full relative text-textColor bg-black overflow-hidden h-screen">
-      <div className="h-full flex z-20 max-w-screen-2xl flex-row justify-center md:items-center mt-2 md:mt-0 items-start mx-auto">
+      <div className="h-full flex z-20 max-w-screen-2xl flex-row justify-center items-center mx-auto">
         <Home />
       </div>
       <div className="w-full h-full absolute top-0 left-0 z-10">

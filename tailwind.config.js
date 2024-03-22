@@ -14,7 +14,7 @@ module.exports = {
         titleRoundBg:
           "linear-gradient(135deg, rgba(120, 204, 109, 0.15) 0%, rgba(120, 204, 109, 1) 100%)",
       },
-      animatiion: {
+      animatison: {
         "spin-slow": "spin 15s linear infinite",
         "reverse-spin": "reverse-spin 15s linear infinite",
         "reverse-spin-long": "reverse-spin 35s linear infinite",
@@ -31,11 +31,12 @@ module.exports = {
         testShadow: "11px 0px 13px -15px rgba(0, 0, 0, 1",
       },
       screens: {
-        sml: "500px",
-      //   md: "667px",
-        md1: "768px",
-        lg: "1160px",
-        // xl: "1200px",
+        xsm: "430px",   // extra Small devices (xs phones)
+        sm: "576px",   // Small devices (phones)
+        md: "992px",   // Medium devices (tablets)
+        lg: "1200px",  // large devices (desktops)
+        // xl: "1200px",   // Extra Large devices (large desktops)
+        cus: "1000px",   // custom devices (custom desktops)
       },
     },
   },

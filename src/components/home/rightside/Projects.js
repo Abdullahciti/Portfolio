@@ -85,7 +85,8 @@ const Projects = () => {
             image={projectEight}
             title={"Bondi"}
             category={"Website"}
-            link={""}
+            link={"https://abdullahciti.github.io/bondi-with-Bootstrap/"}
+            linkGit={"https://github.com/Abdullahciti/bondi-with-Bootstrap"}
             myGrad={"from-gray-600 via-gray-600 to-blue-200"}
           />
           <ProjectCard
