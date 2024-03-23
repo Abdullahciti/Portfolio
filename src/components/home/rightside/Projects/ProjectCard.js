@@ -33,7 +33,7 @@ const ProjectCard = ({ image, title, category, link, linkGit, myGrad }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <span className=" text-black text-4xl hover:text-gradient"><FaGithubSquare /></span>
+                <span className=" text-black text-4xl hover:text-textColor duration-300"><FaGithubSquare /></span>
               </a>
             </div>
           ) : (

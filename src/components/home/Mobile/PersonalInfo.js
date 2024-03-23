@@ -22,10 +22,10 @@ const PersonalInfo = () => {
             loading="prioity"
             src={avatar}
             alt=""
-            className="max-w-full opacity-100 scale-[1.1] duration-300 h-[900px] object-none"
+            className="max-w-full opacity-100 scale-[1.1] duration-300 min-h-[900px] object-none"
           />
         </div>
-        <div className="w-full h-full flex flex-col justify-between items-start mt-20">
+        <div className="w-full h-full flex flex-col justify-between items-start mt-10">
           <h2 className="text-4xl font-titleFont font-bold w-fit mx-auto">
             Abdullah Arafa
           </h2>

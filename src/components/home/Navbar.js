@@ -35,14 +35,14 @@ const Navbar = (props) => {
         // {/* Start Other Navbar Icons */}
         <ul
           onMouseOver={props.trueShow}
-          className="bg-bodyColor rounded-xl flex flex-col md:justify-evenly lg:justify-between w-[60px] md:h-[250px] lg:h-[350px] lg:py-2 lg:m-1"
+          className="bg-bodyColor rounded-xl flex flex-col md:justify-evenly lg:justify-between w-[60px] sm:h-full lg:h-[350px] lg:py-2 lg:m-1"
         >
           <li
-            onClick={props.toggleAbout}
+            onClick={props.toggleLeft}
             className="relative w-full text-2xl hover:text-designColor rounded-t-xl flex items-center justify-center p-3 mb-1 cursor-pointer group lg:hidden"
           >
            <FontAwesomeIcon icon={faPersonChalkboard} />
-            <span className="absolute font-semibold text-lg w-[112px] text-center uppercase bg-designColor text-black translate-x-10 z-50 group-hover:translate-x-20 opacity-0 group-hover:opacity-100 duration-300 rounded-2xl px-1">
+            <span className="absolute font-semibold text-lg w-[176px] text-center uppercase bg-designColor text-black translate-x-24 z-50 group-hover:translate-x-28 opacity-0 group-hover:opacity-100 duration-300 rounded-2xl px-1">
               Presonal Info
             </span>
           </li>
