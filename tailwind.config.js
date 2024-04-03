@@ -15,8 +15,8 @@ module.exports = {
           "linear-gradient(135deg, rgba(120, 204, 109, 0.15) 0%, rgba(120, 204, 109, 1) 100%)",
       },
       animation: {
-        "spin-slow": "spin 15s linear infinite",
-        "reverse-spin": "reverse-spin 15s linear infinite",
+        "spin-slow": "spin 70s linear infinite",
+        "reverse-spin": "reverse-spin 50s linear infinite",
         "reverse-spin-long": "reverse-spin 35s linear infinite",
       },
       keyframes: {

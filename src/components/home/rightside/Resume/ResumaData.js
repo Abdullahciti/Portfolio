@@ -5,18 +5,28 @@ import ResumeCard from "./ResumeCard";
 
 const ResmueData = () => {
   return (
-    <div className="w-full grid nd:grid-cols-9 grid-cols-1">
+    <div className="w-full grid md:grid-cols-9 grid-cols-1">
       {/* Start Experiance */}
       <div className="md:col-span-4 px-4 pl-6">
         <AltTitle icon={<PiBagSimpleFill />} title={"Experience"} />
         <ResumeCard
-          status={true}
-          date={2024}
-          lastDate={"Present"}
-          header={"Frontend Web Development"}
-          place={"Self-Employed"}
+          status={""}
+          date={2020}
+          lastDate={2021}
+          header={"HTML & CSS Proficiency"}
+          place={"Self-Directed Study"}
           paragraph={
-            "As a frontend web developer, I am passionate about crafting engaging and user-friendly interfaces. I specialize in HTML, CSS, and JavaScript, and I continually explore new technologies to enhance my skills and stay updated with industry trends."
+            "I dedicated myself to mastering HTML and CSS, refining my ability to create visually stunning and responsive web designs. Through self-directed study and hands-on projects, I honed my skills in front-end development, ensuring that I deliver high-quality and aesthetically pleasing websites."
+          }
+        />
+        <ResumeCard
+          status={""}
+          date={2022}
+          lastDate={2023}
+          header={"Introduction to JavaScript"}
+          place={"Self-Study"}
+          paragraph={
+            "I embarked on my journey with JavaScript, starting with the fundamentals and gradually building my proficiency. Through self-directed study and practice, I gained a solid understanding of JavaScript syntax, data types, and basic programming concepts. I worked on beginner-level projects to apply my knowledge and reinforce my learning, laying a strong foundation for future endeavors in web development."
           }
         />
         <ResumeCard
@@ -30,22 +40,13 @@ const ResmueData = () => {
           }
         />
         <ResumeCard
-        status={""}
-        date={2022}
-        lastDate={2023}
-        header={"Introduction to JavaScript"}
-        place={"Self-Study"}
-        paragraph={"I embarked on my journey with JavaScript, starting with the fundamentals and gradually building my proficiency. Through self-directed study and practice, I gained a solid understanding of JavaScript syntax, data types, and basic programming concepts. I worked on beginner-level projects to apply my knowledge and reinforce my learning, laying a strong foundation for future endeavors in web development."}
-        />
-
-        <ResumeCard
-          status={""}
-          date={2020}
-          lastDate={2021}
-          header={"HTML & CSS Proficiency"}
-          place={"Self-Directed Study"}
+          status={true}
+          date={2024}
+          lastDate={"Present"}
+          header={"Frontend Web Development"}
+          place={"Self-Employed"}
           paragraph={
-            "I dedicated myself to mastering HTML and CSS, refining my ability to create visually stunning and responsive web designs. Through self-directed study and hands-on projects, I honed my skills in front-end development, ensuring that I deliver high-quality and aesthetically pleasing websites."
+            "As a frontend web developer, I am passionate about crafting engaging and user-friendly interfaces. I specialize in HTML, CSS, and JavaScript, and I continually explore new technologies to enhance my skills and stay updated with industry trends."
           }
         />
       </div>
@@ -58,22 +59,12 @@ const ResmueData = () => {
         <AltTitle icon={<IoSchool />} title={"Education"} />
         <ResumeCard
           status={""}
-          date={"2023"}
-          lastDate={"2024"}
-          header={"German B2"}
-          place={"Vhs Göppingen"}
+          date={2013}
+          lastDate={2016}
+          header={"Math"}
+          place={"High School"}
           paragraph={
-            "Ich beherrsche jetzt die deutsche Sprache fließend und kann mich besser ausdrücken."
-          }
-        />
-        <ResumeCard
-          status={""}
-          date={"2022"}
-          lastDate={"2023"}
-          header={"German from A1 to B1"}
-          place={"Vhs Geislingen"}
-          paragraph={
-            "ich konnte damals einfache Gespräche führen sowie über alltägliche Themen sprechen."
+            "I`ve a strong foundation in mathematical principles and problem-solving skills."
           }
         />
         <ResumeCard
@@ -88,12 +79,22 @@ const ResmueData = () => {
         />
         <ResumeCard
           status={""}
-          date={2013}
-          lastDate={2016}
-          header={"Math"}
-          place={"High School"}
+          date={"2022"}
+          lastDate={"2023"}
+          header={"German from A1 to B1"}
+          place={"Vhs Geislingen"}
           paragraph={
-            "I`ve a strong foundation in mathematical principles and problem-solving skills."
+            "ich konnte damals einfache Gespräche führen sowie über alltägliche Themen sprechen."
+          }
+        />
+        <ResumeCard
+          status={""}
+          date={"2023"}
+          lastDate={"2024"}
+          header={"German B2"}
+          place={"Vhs Göppingen"}
+          paragraph={
+            "Ich beherrsche jetzt die deutsche Sprache fließend und kann mich besser ausdrücken."
           }
         />
       </div>
