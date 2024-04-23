@@ -25,7 +25,7 @@ const Details = () => {
         <span className=" bg-designColor text-black text-lg rounded-md px-2 font-semibold">
           Nationality:
         </span>
-        <span className="pr-2 flex items-start justify-start w-[80px]">Egypt</span>
+        <span className="pr-2 flex items-start justify-start w-[80px]">Egyptian</span>
       </li>
     </ul>
   );
