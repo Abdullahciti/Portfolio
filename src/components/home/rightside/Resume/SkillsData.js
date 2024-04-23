@@ -12,7 +12,7 @@ const SkillsData = () => {
     <div className="w-full grid md:grid-cols-9 grid-cols-1">
       {/* Start Design */}
       <div className=" col-span-4 px-4 pl-6">
-        <AltTitle icon={<GiMoebiusTriangle />} title={"Design"} />
+        <AltTitle icon={<GiMoebiusTriangle />} title={"Technical Skills"} />
         <SkillsCard status={true} skill={"Web Development"} fill={"w-[85%]"} />
         <SkillsCard status={true} skill={"Web Design"} fill={"w-[90%]"} />
         <SkillsCard
