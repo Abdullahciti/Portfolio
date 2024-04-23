@@ -14,7 +14,7 @@ const GetInTouch = () => {
             <span className=" bg-designColor text-black text-lg rounded-md px-2 font-semibold">
               Phone
             </span>
-            <span className="pr-2 w-[155px]">+491702390457</span>
+            <span className="pr-2 w-[155px]">+491512412234</span>
           </li>
         </ul>
       </div>
