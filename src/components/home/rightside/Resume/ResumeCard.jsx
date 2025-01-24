@@ -1,6 +1,6 @@
 const ResumeCard = ({ status, date, lastDate, header, place, paragraph }) => {
   return (
-    <div className="">
+    <div className="border border-borderColor my-1">
       {status === true ? (
         <h1 className="bg-[#3f3c2e] w-fit py-1 px-2 ml-5 mt-3 text-designColor border-designColor border-[1px] rounded-sm">
           {date}

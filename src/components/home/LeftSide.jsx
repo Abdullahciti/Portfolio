@@ -6,8 +6,8 @@ import MyText from "./leftside/Typewriter";
 
 const LeftSide = () => {
   return (
-    <div className="flex flex-col bg-bodyColor rounded-md w-96">
-      <div className="h-full w-full overflow-hidden bg-transparent brightness-50">
+    <div className="flex w-full flex-col justify-between bg-bodyColor rounded-md">
+      <div className="h-4/6 lg:w-5/6 w-2/4 mx-auto mt-auto overflow-hidden bg-transparent brightness-50 opacity-75">
         <img
           src={avatar}
           alt="avatat pic"
@@ -15,7 +15,7 @@ const LeftSide = () => {
         />
       </div>
       <div className="flex flex-col justify-between items-center h-fit gap-6 mt-10">
-        <h2 className="xl:text-4xl lg:text-3xl md:text-2xl text-xl font-titleFont font-bold w-fit mx-auto">
+        <h2 className="lg:text-3xl md:text-2xl text-xl font-titleFont font-bold w-fit mx-auto">
           Abdullah Arafa
         </h2>
         <MyText />

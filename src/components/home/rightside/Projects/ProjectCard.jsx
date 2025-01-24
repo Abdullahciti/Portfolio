@@ -2,7 +2,7 @@ import { FaGithubSquare } from "react-icons/fa";
 
 const ProjectCard = ({ image, title, category, link, linkGit, myGrad }) => {
   return (
-    <div className="relative group">
+    <div className="relative group border border-borderColor">
       <div className="w-full relative flex flex-col my-6 md:mb-6 md:mt-0 items-center justify-center md:borderBottom md:py-10 md:px-5 pb-3">
         <div className="w-full h-96 flex items-center justify-center  mb-3 md:my-0 overflow-hidden rounded-lg group">
           <img

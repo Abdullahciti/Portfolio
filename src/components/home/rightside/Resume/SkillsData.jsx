@@ -11,7 +11,7 @@ const SkillsData = () => {
   return (
     <div className="w-full grid md:grid-cols-9 grid-cols-1">
       {/* Start Design */}
-      <div className="col-span-4 px-4 pl-6">
+      <div className="col-span-4">
         <AltTitle icon={<GiMoebiusTriangle />} title={"Technical Skills"} />
         <SkillsCard status={true} skill={"Web Development"} fill={"w-[85%]"} />
         <SkillsCard status={true} skill={"Web Design"} fill={"w-[90%]"} />
@@ -33,7 +33,7 @@ const SkillsData = () => {
         <span className="w-[1px] h-full bg-zinc-800 inline-flex"></span>
       </div>
       {/* Start Languages */}
-      <div className="md:col-span-4 px-4 pl-6">
+      <div className="md:col-span-4">
         <AltTitle icon={<GrFlagFill />} title={"Languages"} />
         <SkillsCard status={"skill"} skill={"Arabic"} fill={"w-[100%]"} />
         <SkillsCard status={true} skill={"Deutsch"} fill={"w-[88%]"} />
@@ -41,7 +41,7 @@ const SkillsData = () => {
         <SkillsCard status={true} skill={"Ukranian"} fill={"w-[82%]"} />
         {/* Start Knowledge */}
           <AltTitle icon={<GiGiftOfKnowledge />} title={"Knowledge"} />
-        <div className="mt-5">
+        <div className="mt-5 mb-10">
           <SkillsCard
             status={false}
             icon={<MdDone />}

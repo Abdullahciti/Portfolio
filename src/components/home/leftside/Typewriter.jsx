@@ -2,7 +2,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const MyText = () => {
   return (
-    <p className="w-fit mx-auto font-bold text-designColor">
+    <p className="w-fit mx-auto lg:text-xl text-sm font-semibold text-designColor">
       <span>
         <Typewriter
           words={["React Developer", "Frontend Developer"]}

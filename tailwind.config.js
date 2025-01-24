@@ -11,6 +11,7 @@ export default {
         titleFont: ["Montserrat", "sans-serif"],
       },
       colors: {
+        borderColor: "#FFFFFF1A",
         bodyColor: "#191919",
         textColor: "rgba(255, 255, 255, 0.85)",
         designColor: "#edff20",
@@ -34,12 +35,8 @@ export default {
         testShadow: "11px 0px 13px -15px rgba(0, 0, 0, 1",
       },
       screens: {
-        xsm: "430px",   // extra Small devices (xs phones)
-        sm: "576px",   // Small devices (phones)
         md: "767px",   // Medium devices (tablets)
         lg: "1024px",  // large devices (desktops)
-        xl: "1200px",   // Extra Large devices (large desktops)
-        cus: "1000px",   // custom devices (custom desktops)
       },
     },
   },

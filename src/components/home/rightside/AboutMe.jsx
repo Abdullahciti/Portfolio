@@ -6,10 +6,7 @@ import LeftSideSm from "../Mobile/LeftSideSm";
 const AboutMe = () => {
   return (
     // Start Main About Me
-    <section id="about">
-      <div className="xl:hidden block">
-        <LeftSideSm />
-      </div>
+    <section id="about" className="lg:mb-0 mb-6">
       {/* Start About */}
       <MainTitle title={"About"} subTitle={"Me"} />
       <About />

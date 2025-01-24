@@ -16,7 +16,7 @@ const LeftSideSm = () => {
             />
           </div>
           <div className="flex flex-col basis-2/4">
-            <h2 className="xl:text-4xl lg:text-3xl md:text-2xl text-xl font-titleFont font-bold w-fit mx-auto">
+            <h2 className="lg:text-4xl text-3xl md:text-2xl font-titleFont font-bold w-fit mx-auto">
               Abdullah Arafa
             </h2>
             <MyText />
