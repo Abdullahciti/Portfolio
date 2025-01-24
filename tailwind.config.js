@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -15,9 +18,9 @@ module.exports = {
           "linear-gradient(135deg, rgba(120, 204, 109, 0.15) 0%, rgba(120, 204, 109, 1) 100%)",
       },
       animation: {
-        "spin-slow": "spin 70s linear infinite",
-        "reverse-spin": "reverse-spin 50s linear infinite",
-        "reverse-spin-long": "reverse-spin 35s linear infinite",
+        // "spin-slow": "spin 70s linear infinite",
+        // "reverse-spin": "reverse-spin 50s linear infinite",
+        // "reverse-spin-long": "reverse-spin 35s linear infinite",
       },
       keyframes: {
         "reverse-spin": {
@@ -33,12 +36,12 @@ module.exports = {
       screens: {
         xsm: "430px",   // extra Small devices (xs phones)
         sm: "576px",   // Small devices (phones)
-        md: "992px",   // Medium devices (tablets)
-        lg: "1200px",  // large devices (desktops)
-        // xl: "1200px",   // Extra Large devices (large desktops)
+        md: "767px",   // Medium devices (tablets)
+        lg: "1024px",  // large devices (desktops)
+        xl: "1200px",   // Extra Large devices (large desktops)
         cus: "1000px",   // custom devices (custom desktops)
       },
     },
   },
-  plugins: [require("tailwind-scrollbar")],
-};
+  plugins: [],
+}
