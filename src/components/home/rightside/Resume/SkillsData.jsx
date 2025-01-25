@@ -8,7 +8,7 @@ import { GiGiftOfKnowledge } from "react-icons/gi";
 
 const SkillsData = () => {
   return (
-    <div className="w-full flex border border-borderColor">
+    <div className="w-full flex lg:flex-row flex-col border border-borderColor">
       {/* Start Design */}
       <div className="basis-1/2 border-r border-borderColor px-6">
         <AltTitle icon={<GiMoebiusTriangle />} title={"Technical Skills"} />
