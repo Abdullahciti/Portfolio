@@ -1,44 +1,36 @@
 const GetInTouch = () => {
   return (
-    <div className="grid lg:grid-cols-9 grid-cols-1">
+    <div className="flex lg:flex-row flex-col justify-between border border-borderColor py-6">
       {/* Start Left Side */}
-      <div className="col-span-4 p-6">
-        <ul className="w-full flex flex-col justify-between items-center px-4 gap-3">
-          <li className="w-full flex justify-between items-center borderBottom py-3">
-            <span className=" bg-designColor text-black text-lg rounded-md px-2 font-semibold">
-              Address:
-            </span>
-            <span className="pr-2 basis-2/4">Geislingen, DE</span>
-          </li>
-          <li className="w-full flex justify-between items-center borderBottom py-3">
-            <span className=" bg-designColor text-black text-lg rounded-md px-2 font-semibold">
-              Phone
-            </span>
-            <span className="pr-2 basis-2/4">+491512412234</span>
-          </li>
-        </ul>
-      </div>
-      {/* Manual Border */}
-      <div className="col-span-1 hidden cus:hidden h-full w-full lg:flex items-center justify-center pb-5">
-        <span className="w-[1px] h-full bg-zinc-800 inline-flex"></span>
-      </div>
+      <ul className="w-full flex flex-col justify-between items-center px-4 gap-3 border-r border-borderColor">
+        <li className="w-full flex justify-between items-center lg:border-none border border-borderColor lg:p-0 py-6 pl-5">
+          <span className=" bg-designColor text-black text-lg rounded-md px-2 font-semibold">
+            Address:
+          </span>
+          <span className="pr-2 basis-2/4">Geislingen, DE</span>
+        </li>
+        <li className="w-full flex justify-between items-center lg:border-none border border-borderColor lg:p-0 py-6 pl-5">
+          <span className=" bg-designColor text-black text-lg rounded-md px-2 font-semibold">
+            Phone
+          </span>
+          <span className="pr-2 basis-2/4">+491512412234</span>
+        </li>
+      </ul>
       {/* Start Right Side */}
-      <div className="col-span-4 pt-0 p-6 lg:pt-6">
-        <ul className="w-full flex flex-col justify-between items-center px-4 gap-3">
-          <li className="w-full flex justify-between items-center borderBottom lg:py-3 pb-3">
-            <span className=" bg-designColor text-black text-lg rounded-md px-2 font-semibold">
-              Email:
-            </span>
-            <span className="pr-2 basis-2/4">abdullahciti@gmx.de</span>
-          </li>
-          <li className="w-full flex justify-between items-center borderBottom py-3">
-            <span className=" bg-designColor text-black text-lg rounded-md px-2 font-semibold">
-              Job:
-            </span>
-            <span className="pr-2 basis-2/4">Seeking New Challenges</span>
-          </li>
-        </ul>
-      </div>
+      <ul className="w-full flex flex-col justify-between items-center px-4 gap-3 border-l border-borderColor">
+        <li className="w-full flex justify-between items-center lg:border-none border border-borderColor lg:py-0 py-6 pl-5">
+          <span className=" bg-designColor text-black text-lg rounded-md px-2 font-semibold">
+            Email:
+          </span>
+          <span className="pr-2 basis-2/4">abdullahciti@gmx.de</span>
+        </li>
+        <li className="w-full flex justify-between items-center lg:border-none border border-borderColor lg:p-0 py-6 pl-5">
+          <span className=" bg-designColor text-black text-lg rounded-md px-2 font-semibold">
+            Job:
+          </span>
+          <span className="pr-2 basis-2/4">Seeking New Challenges</span>
+        </li>
+      </ul>
     </div>
   );
 };

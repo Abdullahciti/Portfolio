@@ -81,7 +81,7 @@ const Contact = () => {
             id="form"
             action="https://getform.io/f/panveqva"
             method="POST"
-            className="px-10"
+            className="border border-borderColor px-10 mb-6"
           >
             <div className="w-full flex flex-col md:flex-row md:justify-between md:items-center md:gap-10">
               <input

@@ -1,10 +1,12 @@
 import MainTitle from "./MainTitle.jsx";
 import ProjectCard from "./Projects/ProjectCard.jsx";
+import blogWebsite from "../../../assets/projects/Redux-Blog-website.png";
+import studentsApp from "../../../assets/projects/students-app.png";
 import estate from "../../../assets/projects/estate.png";
 import templateJs from "../../../assets/projects/template-js.png";
 import eCommerce from "../../../assets/projects/e-commerce.png";
 import weatherApp from "../../../assets/projects/weather-app.png";
-import discordApp from "../../../assets/projects/discord-app.png";
+import starwood from "../../../assets/projects/starwood.png";
 import citiApp from "../../../assets/projects/citizen-x-website.png";
 import tunesStore from "../../../assets/projects/store-simple.png";
 import kasper from "../../../assets/projects/kasper.png";
@@ -14,7 +16,28 @@ const Projects = () => {
   return (
     <>
       <MainTitle title={"Recent"} subTitle={"Projects"} />
-      <div className="grid lg:grid-cols-2 grid-cols-1 lg:mx-0 mx-1">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-6">
+        <ProjectCard
+          image={starwood}
+          title={"Starwood"}
+          category={"Website"}
+          link={"https://www.starwood.sa/"}
+          linkGit={"https://github.com/Abdullahciti"}
+        />
+        <ProjectCard
+          image={studentsApp}
+          title={"Students Dashboard"}
+          category={"Website"}
+          link={"https://students-app-2025-q6th.vercel.app/"}
+          linkGit={"https://github.com/Abdullahciti/Students-app-2025"}
+        />
+        <ProjectCard
+          image={blogWebsite}
+          title={"Blog/Posts"}
+          category={"Website"}
+          link={"https://blog-website-rosy-tau.vercel.app/"}
+          linkGit={"https://github.com/Abdullahciti/blog-website"}
+        />
         <ProjectCard
           image={estate}
           title={"Estate II"}
@@ -37,11 +60,6 @@ const Projects = () => {
           linkGit={"https://github.com/Abdullahciti/weather-app"}
         />
         <ProjectCard
-          image={discordApp}
-          title={"Discord Bot"}
-          category={"Python"}
-        />
-        <ProjectCard
           image={citiApp}
           title={"Citizen-x"}
           category={"Website"}
@@ -50,30 +68,22 @@ const Projects = () => {
         />
         <ProjectCard
           image={templateJs}
-          title={"Js-Template"}
+          title={"Vanilla-Js Template"}
           category={"Website"}
           link={"https://abdullahciti.github.io/Special-Template-JS/"}
           myGrad={"from-blue-800 via-blue-600 to-blue-200"}
           linkGit={"https://github.com/Abdullahciti/Special-Template-JS"}
         />
         <ProjectCard
-          image={tunesStore}
-          title={"My Tunes"}
-          category={"Webesite"}
-          link={"https://abdullahciti.github.io/My-tunes/"}
-          myGrad={"from-red-600 via-red-600 to-red-200"}
-          linkGit={"https://github.com/Abdullahciti/TopC-Website.github.io"}
-        />
-        <ProjectCard
           image={kasper}
-          title={"Kasper"}
+          title={"Kasper Template"}
           category={"Website"}
           link={"https://abdullahciti.github.io/Kasper-Website/"}
           linkGit={"https://github.com/Abdullahciti/Kasper-Website"}
         />
         <ProjectCard
           image={bondi}
-          title={"Bondi"}
+          title={"Bondi Theme"}
           category={"Website"}
           link={"https://abdullahciti.github.io/bondi-with-Bootstrap/"}
           linkGit={"https://github.com/Abdullahciti/bondi-with-Bootstrap"}

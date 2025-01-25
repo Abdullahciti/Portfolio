@@ -4,7 +4,7 @@ import SkillsData from "./Resume/SkillsData";
 
 const Resume = () => {
   return (
-    <section id="resume" className="lg:mb-0 mb-5 border border-borderColor">
+    <section id="resume" className="lg:mb-0 mb-5">
       <MainTitle title={"My"} subTitle={"Resume"} />
       <ResmueData />
       <MainTitle title={"My"} subTitle={"Skills"} />
