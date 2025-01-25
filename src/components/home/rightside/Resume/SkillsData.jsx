@@ -6,56 +6,41 @@ import { MdDone } from "react-icons/md";
 import { FaLaptopCode } from "react-icons/fa";
 import { GiGiftOfKnowledge } from "react-icons/gi";
 
-
 const SkillsData = () => {
   return (
-    <div className="w-full grid md:grid-cols-9 grid-cols-1 border border-borderColor">
+    <div className="w-full flex border border-borderColor">
       {/* Start Design */}
-      <div className="col-span-4">
+      <div className="basis-1/2 border-r border-borderColor px-6">
         <AltTitle icon={<GiMoebiusTriangle />} title={"Technical Skills"} />
-        <SkillsCard status={true} skill={"Web Development"} fill={"w-[85%]"} />
-        <SkillsCard status={true} skill={"Web Design"} fill={"w-[90%]"} />
+        <SkillsCard status={true} skill={"Web Development"} fill={"w-10/12"} />
         <SkillsCard
           status={true}
-          skill={"Mobile Application"}
-          fill={"w-[80%]"}
+          skill={"Database Management"}
+          fill={"w-4/6"}
         />
-        <SkillsCard status={true} skill={"UX"} fill={"w-[75%]"} />
+        <SkillsCard status={true} skill={"SPA Applications"} fill={"w-4/6"} />
+        <SkillsCard status={true} skill={"UX"} fill={"w-4/5"} />
         {/* Start Coding */}
         <AltTitle icon={<FaLaptopCode />} title={"Coding"} />
-        <SkillsCard status={true} skill={"JavaScript"} fill={"w-[92%]"} />
-        <SkillsCard status={true} skill={"TypeScript"} fill={"w-[92%]"} />
-        <SkillsCard status={true} skill={"React"} fill={"w-[88%]"} />
-        <SkillsCard status={true} skill={"Vue"} fill={"w-[84%]"} />
-      </div>
-      {/* Start Manual Border */}
-      <div className="col-span-1 h-full w-full md:flex hidden items-center justify-center">
-        <span className="w-[1px] h-full bg-zinc-800 inline-flex"></span>
+        <SkillsCard status={true} skill={"JavaScript"} fill={"w-10/12"} />
+        <SkillsCard status={true} skill={"React.js"} fill={"w-10/12"} />
+        <SkillsCard status={true} skill={"Redux-Toolkit"} fill={"w-10/12"} />
+        <SkillsCard status={true} skill={"Node.js"} fill={"w-9/12"} />
       </div>
       {/* Start Languages */}
-      <div className="md:col-span-4">
+      <div className="basis-1/2 border-l border-borderColor px-6">
         <AltTitle icon={<GrFlagFill />} title={"Languages"} />
-        <SkillsCard status={"skill"} skill={"Arabic"} fill={"w-[100%]"} />
-        <SkillsCard status={true} skill={"Deutsch"} fill={"w-[88%]"} />
-        <SkillsCard status={true} skill={"English"} fill={"w-[87%]"} />
-        <SkillsCard status={true} skill={"Ukranian"} fill={"w-[82%]"} />
+        <SkillsCard status={"skill"} skill={"Arabic"} fill={"w-full"} />
+        <SkillsCard status={true} skill={"Deutsch"} fill={"w-4/5"} />
+        <SkillsCard status={true} skill={"English"} fill={"w-10/12"} />
+        <SkillsCard status={true} skill={"Ukranian"} fill={"w-4/5"} />
         {/* Start Knowledge */}
-          <AltTitle icon={<GiGiftOfKnowledge />} title={"Knowledge"} />
-        <div className="mt-5 mb-10">
+        <AltTitle icon={<GiGiftOfKnowledge />} title={"Knowledge"} />
+        <div className="h-fit my-auto">
           <SkillsCard
             status={false}
             icon={<MdDone />}
-            skill={"Website Hosting"}
-          />
-          <SkillsCard
-            status={false}
-            icon={<MdDone />}
-            skill={"Ios & Andriod apps"}
-          />
-          <SkillsCard
-            status={false}
-            icon={<MdDone />}
-            skill={"Create Logo Design"}
+            skill={"React States Managment"}
           />
           <SkillsCard
             status={false}
@@ -65,12 +50,18 @@ const SkillsData = () => {
           <SkillsCard
             status={false}
             icon={<MdDone />}
-            skill={"Clean Code"}
+            skill={"Git and version control"}
+          />
+          <SkillsCard status={false} icon={<MdDone />} skill={"SEO - SPA"} />
+          <SkillsCard
+            status={false}
+            icon={<MdDone />}
+            skill={"Transitions - Animation"}
           />
           <SkillsCard
             status={false}
             icon={<MdDone />}
-            skill={"Work Long!"}
+            skill={"Website Hosting"}
           />
         </div>
       </div>
