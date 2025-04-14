@@ -1,16 +1,16 @@
+import { useTranslation } from "react-i18next";
+
 const Introducing = () => {
+
+  const {t} = useTranslation("about")
+
   return (
     <>
       <h2 className="text-xl font-semibold text-zinc-300 mb-3">
-        Hello, I'm Abdullah Arafa,
+        {t("para")}
       </h2>
       <p className="text-zinc-400 font-light">
-        a junior web developer with a strong interest in creating engaging and
-        interactive web experiences. I'm currently based in Geislingen, Germany
-        and eager to learn and grow within the web development field. My skills
-        include JavaScript, React, and a focus on building user-centered
-        interfaces.
-      </p>
+        {t("desc")}      </p>
     </>
   );
 };

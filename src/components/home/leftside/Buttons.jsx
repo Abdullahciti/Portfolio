@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 
 const Buttons = () => {
+  const { t } = useTranslation("home");
+
   return (
     <div className="w-full flex">
       <a
@@ -21,7 +24,7 @@ const Buttons = () => {
         rel="noopener noreferrer"
         className="w-1/2 flex justify-center items-center lg:text-lg text-sm lg:font-semibold font-light py-3 hover:text-designColor transition-all"
       >
-        Contact Me
+        {t("contact")}
         <FaWhatsappSquare className="text-xl mx-1.5" />
       </a>
     </div>

@@ -2,7 +2,7 @@ const SkillsCard = ({ status, skill, fill, icon }) => {
   return (
     <>
       {status && (
-        <div>
+        <div className="sm:px-0 px-6">
           {/* <div className="w-full my-3 px-3 py-1.5 border-b-[1px] border-b-[#6161613d] pb-3"> */}
           <h1 className="my-3 text-textColor hover:text-[#fff] duration-300">
             {skill}

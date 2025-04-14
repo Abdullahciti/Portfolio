@@ -3,8 +3,11 @@ import GetInTouch from "./Contact/GetInTouch";
 import { useState } from "react";
 import { IoIosSend } from "react-icons/io";
 import axios from "axios";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation("contact");
+
   const [clientName, setClientName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -60,7 +63,7 @@ const Contact = () => {
       });
 
       setTheMessage(
-        `Hello dear ${clientName}, Your message has been sent successfully, Thank you for your time! `
+        `${t("greetings")} ${clientName}, ${t("message")} `
       );
 
       setClientName("");
@@ -72,10 +75,10 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <MainTitle title={"Get"} subTitle={"In Touch"} />
+      <MainTitle title={t("title")} subTitle={t("subTitle")} />
       <GetInTouch />
       <div className="mt-10">
-        <MainTitle title={"Send"} subTitle={"Messages"} />
+        <MainTitle title={t("altTitle")} subTitle={t("altSubTitle")} />
         {!messageSent && (
           <form
             id="form"
@@ -125,7 +128,7 @@ const Contact = () => {
                 type="submit"
                 onClick={handleSend}
               >
-                Send Message
+                {t("send")}
                 <IoIosSend />
               </button>
             </div>

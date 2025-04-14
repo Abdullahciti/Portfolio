@@ -8,9 +8,9 @@ import { GiGiftOfKnowledge } from "react-icons/gi";
 
 const SkillsData = () => {
   return (
-    <div className="w-full flex lg:flex-row flex-col border border-borderColor">
+    <div className="w-full flex lg:flex-row flex-col border border-borderColor sm:mb-6">
       {/* Start Design */}
-      <div className="basis-1/2 border-r border-borderColor px-6">
+      <div className="basis-1/2 border-r border-borderColor sm:px-5">
         <AltTitle icon={<GiMoebiusTriangle />} title={"Technical Skills"} />
         <SkillsCard status={true} skill={"Web Development"} fill={"w-10/12"} />
         <SkillsCard
@@ -28,7 +28,7 @@ const SkillsData = () => {
         <SkillsCard status={true} skill={"Node.js"} fill={"w-9/12"} />
       </div>
       {/* Start Languages */}
-      <div className="basis-1/2 border-l border-borderColor px-6">
+      <div className="basis-1/2 border-l border-borderColor sm:px-5">
         <AltTitle icon={<GrFlagFill />} title={"Languages"} />
         <SkillsCard status={"skill"} skill={"Arabic"} fill={"w-full"} />
         <SkillsCard status={true} skill={"Deutsch"} fill={"w-4/5"} />

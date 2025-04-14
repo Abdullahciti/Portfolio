@@ -10,9 +10,38 @@ import Navbar from "./components/home/Navbar";
 import Handynavbar from "./components/home/Mobile/Handynavbar";
 import LeftSide from "./components/home/LeftSide";
 import HomeMobile from "./HomeMobile";
+import { useContext, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageContext from "./context/LanguageContext";
+
+// Importing language flags
+import usaFlag from "./assets/shared/icons8-usa-50.png";
+import deFlag from "./assets/shared/De-flag.png";
 
 function App() {
   const location = useLocation();
+
+  const { i18n } = useTranslation();
+  const [showLang, setShowLang] = useState(false);
+
+  const { language, setLanguage, switchLanguage } = useContext(LanguageContext);
+
+  const handleLangFocus = () => {
+    setShowLang(true);
+  };
+  const handleLangBlur = () => {
+    setShowLang(false);
+  };
+
+  useEffect(() => {
+    if (!window.localStorage.getItem("language")) {
+      window.localStorage.setItem("language", "en");
+      setLanguage("en");
+    } else {
+      setLanguage(window.localStorage.getItem("language"));
+      i18n.changeLanguage(language);
+    }
+  }, [i18n, language, setLanguage]);
 
   return (
     <>
@@ -23,6 +52,54 @@ function App() {
         <RoundThree />
         <RoundFour />
         <RoundFive />
+      </div>
+      {/* Language switcher button */}
+      <div
+        className="absolute top-5 right-5 p-3 z-50 cursor-pointer border border-borderColor bg-designColor bg-opacity-10 text-textColor"
+        onClick={() => setShowLang(!showLang)}
+        onMouseLeave={handleLangBlur}
+        onFocus={handleLangFocus}
+        onBlur={handleLangBlur}
+      >
+        {language === "en" ? (
+          <span className="flex items-center font-bold gap-1.5 text-lg">
+            <img src={usaFlag} alt="usa flag" className="w-6 h-6" />
+            EN
+          </span>
+        ) : language === "de" ? (
+          <span className="flex items-center font-bold gap-1.5 text-lg">
+            <img src={deFlag} alt="usa flag" className="w-6 h-6" />
+            De
+          </span>
+        ) : (
+          ""
+        )}
+        <ul
+          className={`absolute z-50 left-0 top-[101%] flex-col bg-designColor bg-opacity-10 opacity-0 py-1.5 text-nowrap bg-globalColor8 border-t-2 border-t-globalColor0 border-opacity-80 transition rounded-sm cursor-default shadow-2xl ${
+            showLang
+              ? "translate-y-0 opacity-100 flex opacity-1 pointer-events-auto"
+              : "-translate-y-6 opacity-0 pointer-events-none"
+          }`}
+        >
+          <li>
+            <button
+              onClick={() => switchLanguage("en")}
+              className="flex items-center font-bold gap-2 px-3 my-2 hover:text-globalColor0 transition-all"
+            >
+              <img src={usaFlag} alt="usa flag" className="w-6 h-6" />
+              EN
+            </button>
+          </li>
+          <li>
+            <button
+              onClick={() => switchLanguage("de")}
+              className="flex items-center font-bold gap-2 px-3 my-2 hover:text-globalColor0 transition-all"
+            >
+              <img src={deFlag} alt="usa flag" className="w-6 h-6" />
+              De
+            </button>
+          </li>
+        </ul>
       </div>
       <div
         className="lg:w-full h-screen flex justify-center lg:items-center lg:pt-0 pt-4 text-textColor bg-black overflow-y-scroll

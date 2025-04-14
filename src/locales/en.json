@@ -1,0 +1,78 @@
+{
+  "navbar": {
+    "about": "About",
+    "projects": "Projects",
+    "resume": "Resume",
+    "email": "Email Me"
+  },
+  "common": {
+    "title": "We are Starwood for Timber",
+    "subtitle": "Engineering Experts"
+  },
+  "home": {
+    "job": "Developer",
+    "contact": "Contact" 
+  },
+  "about": {
+    "title": "About",
+    "subTitle": "me",
+    "para": "Hello, I'm Abdullah Arafa,",
+    "desc": "a junior web developer with a strong interest in creating engaging and interactive web experiences. I'm currently based in Geislingen, Germany and eager to learn and grow within the web development field. My skills include JavaScript, React, and a focus on building user-centered interfaces.",
+    "altTitle": "My",
+    "altSubTitle": "Services"
+  },
+  "services": {
+    "ser1": "Frontend Development",
+    "ser1Desc": "I specialize in crafting clean, user-friendly, and responsive front-end experiences using technologies like React, JavaScript, and CSS.",
+    "ser2": "JS Development",
+    "ser2Desc": "I have a strong command of JavaScript, including ES6+ features, and I use it to build dynamic and interactive web applications.",
+    "ser3": "React Development",
+    "ser3Desc": "I leverage the power of React to build reusable UI components and create efficient and scalable web applications.",
+    "ser4": "Redux Development",
+    "ser4Desc": "I implement Redux to manage application state effectively, ensuring predictable and maintainable data flow."
+  },
+ "resume": {
+  "title": "My",
+  "subTitle": "Resume",
+  "present": "present",
+  "resume1": "Frontend Web Development",
+  "place1": "Self-directed Learning",
+  "resume1desc": "I am currently actively engaged in self-directed learning, focusing on enhancing my frontend development skills. I am building and deploying React.js projects, leveraging technologies like JavaScript, HTML, CSS, and libraries such as Redux. These projects, hosted on platforms like GitHub and Vercel, demonstrate my ability to translate technical concepts into functional and user-friendly web applications.",
+  "resume2": "Self-directed Web Development Studies",
+  "place2": "Online Courses, YouTube Tutorials, and Documentation",
+  "resume2desc": "I dedicated myself to self-directed study, focusing on web development through online courses, YouTube tutorials, and in-depth documentation. I gained a strong foundation in web development technologies, including HTML, CSS, JavaScript, and React.js.",
+  "resume3": "Secondary School",
+  "place3": "6th October School, Giza, Egypt",
+  "resume3desc": "I graduated with a focus on Mathematics, developing strong problem-solving and analytical skills.",
+  "resume4": "University Preparatory Course",
+  "place4": "Ivan Franko National University of Lviv, Ukraine",
+  "resume4desc": "I pursued a Studienkolleg program, preparing me for university studies in Germany.",
+  "resume5": "Civil Engineering",
+  "place5": "Lviv Polytechnic National University, Ukraine",
+  "resume5desc": "I began my studies in Civil Engineering at Lviv Polytechnic National University, Ukraine.",
+  "resume6": "B2 German Language Course",
+  "place6": "Volkshochschule Göppingen, Germany",
+  "resume6desc": "I successfully completed a B2 German language course, enhancing my language proficiency and communication skills."
+},
+  "skills": {
+    "title": "My",
+    "subTitle": "Skills",
+    "technicalSkills": "Technical Skills",
+    "Languages": "Languages",
+    "Coding": "Coding",
+    "Knowledge": "Knowledge" 
+  },
+  "projects":{
+    "title": "Recent",
+    "subTitle": "Projects"
+  },
+  "contact": {
+    "title": "Get",
+    "subTitle":"In Touch",
+    "altTitle": "Send",
+  "altSubTitle": "Messages",
+    "greetings": "Hello dear",
+    "message": "Your message has been sent successfully, Thank you for your time!",
+    "send": "Send Message"
+  }
+}

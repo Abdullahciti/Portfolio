@@ -11,11 +11,14 @@ import citiApp from "../../../assets/projects/citizen-x-website.png";
 import tunesStore from "../../../assets/projects/store-simple.png";
 import kasper from "../../../assets/projects/kasper.png";
 import bondi from "../../../assets/projects/bondi.png";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const { t } = useTranslation("projects");
+
   return (
     <>
-      <MainTitle title={"Recent"} subTitle={"Projects"} />
+      <MainTitle title={t("title")} subTitle={t("subTitle")} />
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-6">
         <ProjectCard
           image={starwood}

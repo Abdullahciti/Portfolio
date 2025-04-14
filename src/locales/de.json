@@ -1,0 +1,79 @@
+{
+  "navbar": {
+    "about": "Über mich",
+    "resume": "Resume",
+    "projects": "Projekte",
+    "email": "Kontakt"
+  },
+  "common": {
+    "title": "We are Starwood for Timber",
+    "subtitle": "Engineering Experts"
+  },
+  "home": {
+    "job": "Entwickler",
+    "contact": "Mich Kontaktieren"
+  },
+  "about": {
+    "title": "Über",
+    "subTitle": "Mich",
+    "para": "Hallo, ich bin Abdullah Arafa.",
+    "desc": "Ein Junior-Webentwickler mit großem Interesse an der Gestaltung ansprechender und interaktiver Web-Erlebnisse. Ich lebe derzeit in Geislingen, Deutschland, und bin bestrebt, im Bereich der Webentwicklung zu lernen und zu wachsen. Zu meinen Fähigkeiten gehören JavaScript, React und der Fokus auf benutzerzentrierte Oberflächen.",
+    "altTitle": "Meine",
+    "altSubTitle": "Dienstleistungen"
+  },
+  "services": {
+    "ser1": "Frontend-Entwicklung",
+    "ser1Desc": "Ich spezialisiere mich auf die Gestaltung sauberer, benutzerfreundlicher und responsiver Frontend-Erlebnisse mit Technologien wie React, JavaScript und CSS.",
+    "ser2": "JS-Entwicklung",
+    "ser2Desc": "Ich beherrsche JavaScript, einschließlich ES6+-Funktionen, und nutze es, um dynamische und interaktive Webanwendungen zu erstellen.",
+    "ser3": "React-Entwicklung",
+    "ser3Desc": "Ich nutze die Stärken von React, um wiederverwendbare UI-Komponenten zu erstellen und effiziente sowie skalierbare Webanwendungen zu entwickeln.",
+    "ser4": "Redux-Entwicklung",
+    "ser4Desc": "Ich implementiere Redux zur effektiven Verwaltung des Anwendungszustands und sorge für einen vorhersehbaren und wartbaren Datenfluss."
+},
+"resume": {
+  "title": "Mein",
+  "subTitle": "Lebenslauf",
+  "present": "Jetzt",
+  "resume1": "Frontend-Webentwicklung",
+  "place1": "Selbstgesteuertes Lernen",
+  "resume1desc": "Ich beschäftige mich derzeit aktiv mit selbstgesteuertem Lernen, um meine Fähigkeiten in der Frontend-Entwicklung zu verbessern. Ich entwickle und deploye React.js-Projekte und nutze dabei Technologien wie JavaScript, HTML, CSS sowie Bibliotheken wie Redux. Diese Projekte, die auf Plattformen wie GitHub und Vercel gehostet werden, zeigen meine Fähigkeit, technische Konzepte in funktionale und benutzerfreundliche Webanwendungen umzusetzen.",
+  "resume2": "Selbstgesteuertes Webentwicklungsstudium",
+  "place2": "Online-Kurse, YouTube-Tutorials und Dokumentationen",
+  "resume2desc": "Ich habe mich intensiv dem selbstgesteuerten Lernen gewidmet, mit Fokus auf Webentwicklung durch Online-Kurse, YouTube-Tutorials und ausführliche Dokumentationen. Ich habe ein solides Fundament in Webtechnologien wie HTML, CSS, JavaScript und React.js aufgebaut.",
+  "resume3": "Sekundarschule",
+  "place3": "6th October School, Gizeh, Ägypten",
+  "resume3desc": "Ich habe meinen Abschluss mit Schwerpunkt Mathematik gemacht und dabei starke Fähigkeiten im Problemlösen und in der Analyse entwickelt.",
+  "resume4": "Universitätsvorbereitungskurs",
+  "place4": "Ivan-Franko-Universität Lwiw, Ukraine",
+  "resume4desc": "Ich habe ein Studienkolleg-Programm absolviert, das mich auf das Studium an einer deutschen Universität vorbereitet hat.",
+  "resume5": "Bauingenieurwesen",
+  "place5": "Nationale Polytechnische Universität Lwiw, Ukraine",
+  "resume5desc": "Ich habe mein Studium im Bereich Bauingenieurwesen an der Nationalen Polytechnischen Universität Lwiw in der Ukraine begonnen.",
+  "resume6": "B2 Deutschkurs",
+  "place6": "Volkshochschule Göppingen, Deutschland",
+  "resume6desc": "Ich habe erfolgreich einen Deutschkurs auf B2-Niveau abgeschlossen und dadurch meine Sprachkenntnisse und Kommunikationsfähigkeiten verbessert."
+},
+"skills": {
+  "title": "Meine",
+  "subTitle": "Fähigkeiten",
+  "technicalSkills": "Technische Fähigkeiten",
+  "Languages": "Sprachen",
+  "Coding": "Programmierung",
+  "Knowledge": "Wissen"
+},
+"projects": {
+  "title": "Neueste",
+  "subTitle": "Projekte"
+},
+"contact": {
+  "title": "Nimm",
+  "subTitle": "Kontakt auf",
+  "greetings": "Hallo, lieber Besucher",
+  "altTitle": "Nachrichten",
+  "altSubTitle": "Senden",
+  "message": "Deine Nachricht wurde erfolgreich gesendet. Vielen Dank für deine Zeit!",
+  "send": "Nachricht senden"
+}
+
+}

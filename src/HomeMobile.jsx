@@ -6,7 +6,7 @@ import LeftSide from "./components/home/LeftSide";
 
 const HomeMobile = () => {
   return (
-    <div className="lg:hidden container">
+    <div className="lg:hidden container lg:p-0 pb-6">
       <div className="my-3">
         <LeftSide />
       </div>
