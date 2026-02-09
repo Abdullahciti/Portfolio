@@ -21,15 +21,15 @@
     "altTitle": "Meine",
     "altSubTitle": "Dienstleistungen"
   },
-  "services": {
-    "ser1": "Frontend-Entwicklung",
-    "ser1Desc": "Ich spezialisiere mich auf die Gestaltung sauberer, benutzerfreundlicher und responsiver Frontend-Erlebnisse mit Technologien wie React, JavaScript und CSS.",
-    "ser2": "JS-Entwicklung",
-    "ser2Desc": "Ich beherrsche JavaScript, einschließlich ES6+-Funktionen, und nutze es, um dynamische und interaktive Webanwendungen zu erstellen.",
-    "ser3": "React-Entwicklung",
-    "ser3Desc": "Ich nutze die Stärken von React, um wiederverwendbare UI-Komponenten zu erstellen und effiziente sowie skalierbare Webanwendungen zu entwickeln.",
-    "ser4": "Redux-Entwicklung",
-    "ser4Desc": "Ich implementiere Redux zur effektiven Verwaltung des Anwendungszustands und sorge für einen vorhersehbaren und wartbaren Datenfluss."
+ "services": {
+    "ser1": "Skalierbare SPA-Architektur",
+    "ser1Desc": "Ich entwickle hochperformante Single-Page-Applications mit der komponentenbasierten Architektur von React und sorge für Modularität, Wiederverwendbarkeit und langfristige Wartbarkeit.",
+    "ser2": "Erweitertes State-Management",
+    "ser2Desc": "Ich implementiere robuste Datenflüsse mit Redux (Toolkit) und verwalte komplexe Anwendungszustände effizient, um Vorhersehbarkeit und nahtlose Benutzerinteraktionen zu gewährleisten.",
+    "ser3": "Responsive UI-Umsetzung",
+    "ser3Desc": "Ich setze Designs in pixelgenaue, responsive Interfaces um, die auf allen Geräten einwandfrei funktionieren, mit Fokus auf modernes CSS, Barrierefreiheit und Browser-Kompatibilität.",
+    "ser4": "API-Integration & Performance",
+    "ser4Desc": "Ich binde RESTful-APIs ein, um Frontend-Schnittstellen mit Backend-Services zu verbinden, und optimiere den Datenabruf sowie asynchrone Logik für dynamische Inhalte."
 },
 "resume": {
   "title": "Mein",

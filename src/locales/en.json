@@ -22,15 +22,15 @@
     "altSubTitle": "Services"
   },
   "services": {
-    "ser1": "Frontend Development",
-    "ser1Desc": "I specialize in crafting clean, user-friendly, and responsive front-end experiences using technologies like React, JavaScript, and CSS.",
-    "ser2": "JS Development",
-    "ser2Desc": "I have a strong command of JavaScript, including ES6+ features, and I use it to build dynamic and interactive web applications.",
-    "ser3": "React Development",
-    "ser3Desc": "I leverage the power of React to build reusable UI components and create efficient and scalable web applications.",
-    "ser4": "Redux Development",
-    "ser4Desc": "I implement Redux to manage application state effectively, ensuring predictable and maintainable data flow."
-  },
+    "ser1": "Scalable SPA Architecture",
+    "ser1Desc": "I build high-performance Single Page Applications using React’s component-based architecture, ensuring modularity, reusability, and long-term maintainability.",
+    "ser2": "Advanced State Management",
+    "ser2Desc": "I implement robust data flows using Redux (Toolkit), managing complex application states efficiently to ensure predictability and seamless user interactions.",
+    "ser3": "Responsive UI Implementation",
+    "ser3Desc": "I transform designs into pixel-perfect, responsive interfaces that work flawlessly across all devices, focusing on modern CSS, accessibility, and cross-browser compatibility.",
+    "ser4": "API Integration & Performance",
+    "ser4Desc": "I integrate RESTful APIs to connect front-end interfaces with back-end services, optimizing data fetching and handling asynchronous logic for dynamic content."
+},
  "resume": {
   "title": "My",
   "subTitle": "Resume",
